@@ -13,8 +13,6 @@ public class ConfigurationManager {
     @Value("${server.port}")
     private int serverPort;
 
-    @Value("${spring.datasource.url}")
-    private String datasourceUrl;
 
     @Value("${management.endpoints.web.exposure.include}")
     private String actuatorEndpoints;
@@ -26,9 +24,6 @@ public class ConfigurationManager {
         return serverPort;
     }
 
-    public String getDatasourceUrl() {
-        return datasourceUrl;
-    }
 
     public String getActuatorEndpoints() {
         return actuatorEndpoints;
